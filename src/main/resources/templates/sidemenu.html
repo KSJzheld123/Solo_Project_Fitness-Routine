@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+</script>
+<script src="/jsf.js"></script>
+<head>
+    <link rel="stylesheet" href="/css.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:fragment="sidemenu">
+
+    <div class="sidemenubox">
+        <ul>
+            <li><a href="#">공지 사항</a></li>
+            <li><a href="#">게시판</a>
+                <ul>
+                    <li><a href="#">전체 게시판</a></li>
+                    <li><a href="#">자유 게시판</a></li>
+                    <li><a href="#">질문 게시판</a></li>
+                </ul>
+            </li>
+            <li><a href="#">헬스 정보</a>
+                <ul>
+                    <li><a href="#">기구 사용법</a></li>
+                    <li><a href="#">헬스 보조제 효과</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

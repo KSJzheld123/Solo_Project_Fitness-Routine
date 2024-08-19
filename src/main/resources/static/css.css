@@ -1,0 +1,143 @@
+html {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    position: relative;
+    background-color: black;
+    height: 1024px;
+    min-width: 1440px;
+}
+
+ul, li, a {
+    padding: 0;
+    color: inherit;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/*headmenu*/
+.headmenubox {
+    position: absolute;
+    display: flex;
+    height: 150px;
+    width: 1440px;
+    background-color: green;
+}
+
+.headmenubox > ul {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.headmenubox > ul > li {
+    display: flex;
+    align-items: stretch;
+}
+
+.headmenubox > ul > li > a {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    padding: 20px;
+}
+
+/*sidemenu*/
+.sidemenubox {
+    position: absolute;
+    margin-top: 150px;
+    height: 874px;
+    width: 200px;
+    background-color: red;
+}
+
+.sidemenubox > ul {
+    display: block;
+}
+
+.sidemenubox > ul > li {
+    width: 200px;
+    display: inline-block;
+}
+
+.sidemenubox > ul > li:nth-child(1) {
+    margin-top: 20px;
+}
+
+.sidemenubox > ul > li > a {
+    display: block;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.sidemenubox > ul > li:hover > a {
+    background-color: white;
+    cursor: pointer;
+}
+
+.sidemenubox > ul > li:hover > ul {
+    display: block;
+}
+
+.sidemenubox > ul > li > ul {
+    position: absolute;
+    display: none;
+    margin-left: 200px;
+    height: 874px;
+    width: 200px;
+    background-color: blue
+}
+
+.sidemenubox > ul > li > ul > li {
+
+}
+
+.sidemenubox  > ul > li > ul > li:nth-child(1) {
+    margin-top: 20px;
+}
+
+.sidemenubox > ul > li > ul > li > a {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.sidemenubox > ul > li > ul {
+    margin-top: -180px;
+    margin-left: 200px;
+    height: 874px;
+    width: 200px;
+    background-color: blue
+}
+
+.sidemenubox > ul > li:nth-child(3) > ul {
+    margin-top: -260px;
+}
+
+.sidemenubox > ul > li > ul > li {
+
+}
+
+.sidemenubox  > ul > li > ul > li:nth-child(1) {
+    margin-top: 20px;
+}
+
+.sidemenubox > ul > li > ul > li > a {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.sidemenubox > ul > li > ul > li:hover > a {
+    background-color: white;
+}
